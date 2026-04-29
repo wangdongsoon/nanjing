@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音乐专辑</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft Yahei", sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      padding: 20px;
+    }
+    .title {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* 下载按钮 */
+    .download-wrap {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .download-btn {
+      padding: 10px 22px;
+      background: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .download-btn:hover {
+      background: #1976d2;
+    }
+
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .album-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .album-item:hover {
+      transform: translateY(-3px);
+    }
+    .album-cover {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+    .album-name {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* 弹窗样式 */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      background: white;
+      width: 90%;
+      max-width: 380px;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .modal-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .link-box {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #333;
+      background: #f9f9f9;
+      word-break: break-all;
+    }
+    .copy-btn {
+      padding: 10px 20px;
+      background: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .close-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #eee;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="title">我的专辑</h2>
+
+  <!-- 下载按钮 -->
+  <div class="download-wrap">
+    <button class="download-btn" onclick="openModal()">📥 歌曲网盘下载</button>
+  </div>
+
+  <div class="album-grid" id="albumGrid"></div>
+
+  <!-- 下载弹窗 -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-title">网盘下载地址</div>
+      <div class="link-box" id="linkText">https://pan.baidu.com/s/1XXXXXX</div>
+      <button class="copy-btn" onclick="copyLink()">一键复制</button>
+      <br>
+      <button class="close-btn" onclick="closeModal()">关闭</button>
+    </div>
+  </div>
+
+  <script src="music.js"></script>
+  <script>
+    // 自动获取所有专辑（去重）
+    function getAlbumList() {
+      const map = {};
+      list.forEach(song => {
+        if (!map[song.artist]) {
+          map[song.artist] = song.cover;
+        }
+      });
+      return Object.entries(map).map(([artist, cover]) => ({ artist, cover }));
+    }
+
+    // 渲染专辑
+    const albumGrid = document.getElementById('albumGrid');
+    const albums = getAlbumList();
+
+    albums.forEach(album => {
+      const div = document.createElement('div');
+      div.className = 'album-item';
+      div.innerHTML = `
+        <img src="${album.cover}" class="album-cover">
+        <div class="album-name">${album.artist}</div>
+      `;
+      div.onclick = () => {
+        location.href = `player.html?album=${encodeURIComponent(album.artist)}`;
+      };
+      albumGrid.appendChild(div);
+    });
+
+    // ================== 下载弹窗功能 ==================
+    const modal = document.getElementById('modal');
+    const linkText = document.getElementById('linkText');
+    
+    // 在这里修改你的真实网盘地址！！！
+    const wangpanLink = "https://pan.baidu.com/s/1234567890";
+
+    // 打开弹窗
+    function openModal() {
+      linkText.innerText = wangpanLink;
+      modal.style.display = "flex";
+    }
+
+    // 关闭弹窗
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    // 一键复制
+    function copyLink() {
+      navigator.clipboard.writeText(wangpanLink).then(() => {
+        alert("复制成功！");
+      }).catch(err => {
+        alert("复制失败，请手动复制");
+      });
+    }
+  </script>
+</body>
+</html>

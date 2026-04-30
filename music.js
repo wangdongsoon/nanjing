@@ -6,26 +6,29 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/cover.png",
   },
-  {
-    name: "关于郑州的记忆",
-    artist: "专辑-Imagine-2011",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/关于郑州的记忆.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
-  },
-   {
-    name: "和你在一起",
-    artist: "专辑-Imagine-2011",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/和你在一起.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
-  },
-  {
+    {
     name: "这个世界会好吗",
     artist: "专辑-io",
     url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/这个世界会好吗.mp3",
     cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/cover.png",
   },
+   {
+    name: "关于郑州的记忆",
+    artist: "专辑-你好，郑州",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/你好，郑州/关于郑州的记忆.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/你好，郑州/cover.png",
+  },
+  
+    {
+    name: "和你在一起",
+    artist: "专辑-勾三搭四",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/勾三搭四/和你在一起.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/勾三搭四/cover.png",
+  },
+  
+ 
    {
     name: "天空之城",
     artist: "专辑-我爱南京",
@@ -59,6 +62,20 @@ var list = [
     artist: "专辑-家",
     url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/定西.mp3",
     cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/cover.png",
+  },
+   {
+    name: "被禁忌的游戏",
+    artist: "专辑-Imagine-2011",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/被禁忌的游戏.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
+  },
+   {
+    name: "梵高先生",
+    artist: "专辑-梵高先生",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/梵高先生/梵高先生.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/梵高先生/cover.png",
   },
   {
     name: "尽头",
@@ -115,6 +132,13 @@ var list = [
     url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/大象.mp3",
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/cover.png",
+  },
+   {
+    name: "关于郑州的记忆",
+    artist: "专辑-Imagine-2011",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/关于郑州的记忆.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
   },
   {
     name: "好威武支持有希望",
@@ -395,13 +419,7 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
   },
-  {
-    name: "被禁忌的游戏",
-    artist: "专辑-Imagine-2011",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/被禁忌的游戏.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
-  },
+  
   {
     name: "门",
     artist: "专辑-Imagine-2011",
@@ -534,6 +552,13 @@ var list = [
     url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/二零零九年十月十六日事件/意味.mp3",
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/二零零九年十月十六日事件/cover.png",
+  },
+    {
+    name: "和你在一起",
+    artist: "专辑-Imagine-2011",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
   },
   {
     name: "春末的南方城市",
@@ -794,13 +819,7 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/勾三搭四/cover.png",
   },
-  {
-    name: "和你在一起",
-    artist: "专辑-勾三搭四",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/勾三搭四/和你在一起.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/勾三搭四/cover.png",
-  },
+ 
   {
     name: "墙上的向日葵",
     artist: "专辑-勾三搭四",
@@ -1528,13 +1547,7 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/梵高先生/cover.png",
   },
-  {
-    name: "梵高先生",
-    artist: "专辑-梵高先生",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/梵高先生/梵高先生.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/梵高先生/cover.png",
-  },
+  
   {
     name: "董卓瑶",
     artist: "专辑-梵高先生",

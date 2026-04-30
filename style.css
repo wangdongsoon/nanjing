@@ -219,7 +219,7 @@ textarea {
 .floating-button {
   position: fixed;
   right: 18px;
-  bottom: 20px;
+  bottom: 150px;
   z-index: 30;
   display: inline-flex;
   align-items: center;

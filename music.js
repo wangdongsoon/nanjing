@@ -1,10 +1,64 @@
 var list = [
+   {
+    name: "热河",
+    artist: "专辑-1701",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/热河.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/cover.png",
+  },
+  {
+    name: "关于郑州的记忆",
+    artist: "专辑-Imagine-2011",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/关于郑州的记忆.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
+  },
+   {
+    name: "和你在一起",
+    artist: "专辑-Imagine-2011",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/和你在一起.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
+  },
+  {
+    name: "这个世界会好吗",
+    artist: "专辑-io",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/这个世界会好吗.mp3",
+    cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/cover.png",
+  },
+   {
+    name: "天空之城",
+    artist: "专辑-我爱南京",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/我爱南京/天空之城.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/我爱南京/cover.png",
+  },
+   {
+    name: "黑色信封",
+    artist: "专辑-电声与管弦乐",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/电声与管弦乐/黑色信封.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/电声与管弦乐/cover.png",
+  },
   {
     name: "倒影",
     artist: "专辑-108个关键词",
     url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/108个关键词/倒影.mp3",
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/108个关键词/cover.png",
+  },
+  {
+    name: "山阴路的夏天",
+    artist: "专辑-北京不插电",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/北京不插电/山阴路的夏天.mp3",
+    cover:
+      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/北京不插电/cover.png",
+  },
+  {
+    name: "定西",
+    artist: "专辑-家",
+    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/定西.mp3",
+    cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/cover.png",
   },
   {
     name: "尽头",
@@ -83,13 +137,7 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/cover.png",
   },
-  {
-    name: "热河",
-    artist: "专辑-1701",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/热河.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/1701/cover.png",
-  },
+ 
   {
     name: "看见",
     artist: "专辑-1701",
@@ -226,20 +274,8 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
   },
-  {
-    name: "关于郑州的记忆",
-    artist: "专辑-Imagine-2011",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/关于郑州的记忆.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
-  },
-  {
-    name: "和你在一起",
-    artist: "专辑-Imagine-2011",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/和你在一起.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/Imagine-2011/cover.png",
-  },
+  
+ 
   {
     name: "喀纳斯",
     artist: "专辑-Imagine-2011",
@@ -422,12 +458,7 @@ var list = [
     url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/杭州.mp3",
     cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/cover.png",
   },
-  {
-    name: "这个世界会好吗",
-    artist: "专辑-io",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/这个世界会好吗.mp3",
-    cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/io/cover.png",
-  },
+  
   {
     name: "铅笔",
     artist: "专辑-io",
@@ -903,13 +934,7 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/北京不插电/cover.png",
   },
-  {
-    name: "山阴路的夏天",
-    artist: "专辑-北京不插电",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/北京不插电/山阴路的夏天.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/北京不插电/cover.png",
-  },
+  
   {
     name: "春末的南方城市",
     artist: "专辑-北京不插电",
@@ -1046,12 +1071,7 @@ var list = [
     url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/大象.mp3",
     cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/cover.png",
   },
-  {
-    name: "定西",
-    artist: "专辑-家",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/定西.mp3",
-    cover: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/家/cover.png",
-  },
+  
   {
     name: "尽头",
     artist: "专辑-家",
@@ -1395,13 +1415,7 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/我爱南京/cover.png",
   },
-  {
-    name: "天空之城",
-    artist: "专辑-我爱南京",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/我爱南京/天空之城.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/我爱南京/cover.png",
-  },
+ 
   {
     name: "家乡",
     artist: "专辑-我爱南京",
@@ -1605,13 +1619,7 @@ var list = [
     cover:
       "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/电声与管弦乐/cover.png",
   },
-  {
-    name: "黑色信封",
-    artist: "专辑-电声与管弦乐",
-    url: "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/电声与管弦乐/黑色信封.mp3",
-    cover:
-      "https://testingcf.jsdelivr.net/gh/nj-lizhi/song@main/audio/电声与管弦乐/cover.png",
-  },
+ 
   {
     name: "一头偶像 (相信未来版)",
     artist: "专辑-电声与管弦乐II",

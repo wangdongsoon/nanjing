@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>简约音乐播放器</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="top-bar">
+      <div class="top-icons">
+        <button id="downloadButton" class="icon-button" type="button" aria-label="下载信息">
+          <span>⇩</span>
+        </button>
+      </div>
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="搜索歌曲或专辑" autocomplete="off">
+        <button id="searchButton" class="icon-button" type="button" aria-label="搜索">
+          <span class="button-icon">⌕</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="player-card">
+      <div class="cover-wrap">
+        <img id="coverImage" class="cover-image" src="" alt="专辑封面">
+      </div>
+
+      <section class="track-info">
+        <h1 id="songName" class="song-name">未加载歌曲</h1>
+        <p id="songArtist" class="song-artist">请检查 music.js</p>
+      </section>
+
+      <section class="progress-wrap">
+        <span id="currentTime">00:00</span>
+        <input id="progressBar" class="progress-bar" type="range" min="0" max="100" value="0">
+        <span id="duration">00:00</span>
+      </section>
+
+      <section class="controls">
+        <button id="prevButton" class="control-button icon-control" type="button" aria-label="上一首">
+          <span class="button-icon">⏮</span>
+        </button>
+        <button id="playButton" class="play-button icon-control play-main-button" type="button" aria-label="播放">
+          <span class="button-icon">▶</span>
+        </button>
+        <button id="nextButton" class="control-button icon-control" type="button" aria-label="下一首">
+          <span class="button-icon">⏭</span>
+        </button>
+      </section>
+
+      <section class="mode-wrap">
+        <button id="modeButton" class="mode-button" type="button" aria-label="播放模式">
+          <span id="modeIcon" class="button-icon">⇄</span>
+          <span id="modeLabel">顺序播放</span>
+        </button>
+      </section>
+    </main>
+
+    <button id="queueToggle" class="floating-button" type="button" aria-label="播放列表">
+      <span>≡</span>
+    </button>
+
+    <aside id="queuePanel" class="queue-panel hidden">
+      <div class="panel-header">
+        <h2>播放列表</h2>
+      </div>
+      <ul id="queueList" class="queue-list"></ul>
+    </aside>
+
+    <section id="searchPanel" class="search-panel hidden">
+      <div class="panel-header">
+        <h2>搜索结果</h2>
+      </div>
+      <div id="searchResult" class="search-result"></div>
+    </section>
+
+    <section id="downloadModal" class="modal hidden">
+      <div class="modal-mask"></div>
+      <div class="modal-content">
+        <div class="panel-header">
+          <h2>网盘内容</h2>
+          <button id="closeModalButton" class="icon-button" type="button" aria-label="关闭弹窗">×</button>
+        </div>
+        <textarea id="shareContent" readonly>网盘链接：https://example.com
+提取码：1234
+说明：这里可以替换成你自己的网盘内容。</textarea>
+        <button id="copyButton" class="copy-button" type="button">复制内容</button>
+      </div>
+    </section>
+  </div>
+
+  <audio id="audio"></audio>
+
+  <script src="./music.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
